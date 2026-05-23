@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission Professionnelle — Keren ADAMU</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f7fa; color: #2d2d2d; }
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white; text-align: center; padding: 60px 20px;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    header p { font-size: 1rem; color: #a0b0c8; margin-bottom: 6px; }
+    .badge {
+      display: inline-block; background: #e8734a; color: white;
+      padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; margin-top: 14px;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .section-title {
+      font-size: 1.1rem; font-weight: 600; color: #1a1a2e;
+      border-left: 4px solid #e8734a; padding-left: 12px;
+      margin: 40px 0 20px;
+    }
+    .card {
+      background: white; border-radius: 12px; padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07); margin-bottom: 16px;
+    }
+    .card h3 { font-size: 1rem; color: #1a1a2e; margin-bottom: 8px; }
+    .card p { font-size: 0.9rem; color: #555; line-height: 1.6; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag {
+      background: #eef2ff; color: #3730a3;
+      padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media(max-width:600px){ .grid { grid-template-columns: 1fr; } }
+    .doc-link {
+      display: flex; align-items: center; justify-content: space-between;
+      background: white; border-radius: 10px; padding: 16px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 12px;
+      text-decoration: none; color: #2d2d2d;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .doc-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .doc-info { flex: 1; }
+    .doc-info h4 { font-size: 0.95rem; margin-bottom: 4px; }
+    .doc-info p { font-size: 0.8rem; color: #888; }
+    .doc-btn {
+      background: #e8734a; color: white; padding: 6px 14px;
+      border-radius: 6px; font-size: 0.8rem;
+    }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+    .team-card {
+      background: white; border-radius: 10px; padding: 16px;
+      text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .team-card .avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #1a1a2e; color: white; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 10px;
+    }
+    .team-card.highlight { border: 2px solid #e8734a; }
+    .team-card h4 { font-size: 0.85rem; font-weight: 600; }
+    .team-card p { font-size: 0.75rem; color: #888; margin-top: 4px; }
+    footer {
+      text-align: center; padding: 30px; color: #888; font-size: 0.85rem;
+      border-top: 1px solid #e5e7eb; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mission Professionnelle — Projet Paperless RH</h1>
+  <p>HSM-Bioclinique x NovaSec Consulting</p>
+  <p>ISMS Scoping · EBIOS RM Risk Analysis · Digital Transformation</p>
+  <span class="badge">School Project — Fictional Client</span>
+</header>
+
+<div class="container">
+
+  <div class="section-title">About the Project</div>
+  <div class="card">
+    <h3>Context</h3>
+    <p>A professional mission simulating a cybersecurity and digital transformation consulting engagement for a fictional hospital — Hôpital Sainte-Marie Laboratoire Bioclinique (HSM-Bioclinique). The project covers the full scoping and risk analysis of a Paperless HR initiative, aiming to digitise and secure employee payslip management.</p>
+    <div class="tags">
+      <span class="tag">EBIOS RM</span>
+      <span class="tag">ISO 27001</span>
+      <span class="tag">RGPD</span>
+      <span class="tag">eIDAS</span>
+      <span class="tag">NIS2</span>
+      <span class="tag">Healthcare</span>
+      <span class="tag">AMOA</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>My Role</h3>
+      <p>AMOA Consultant — Business Processes & Organisation. Responsible for process mapping, stakeholder engagement, and co-authoring the improvement roadmap.</p>
+    </div>
+    <div class="card">
+      <h3>Key Risk Finding</h3>
+      <p>Two critical risks identified (score 20/25 and 16/25): absence of MFA and weak access management — both addressed in the remediation plan.</p>
+    </div>
+  </div>
+
+  <div class="section-title">Project Deliverables</div>
+
+  <a class="doc-link" href="Document_de_cadrage_H%C3%B4pitalSainteMarie_1.pdf" target="_blank">
+    <div class="doc-info">
+      <h4>Document de Cadrage</h4>
+      <p>Project scoping, perimeter, RACI, asset inventory</p>
+    </div>
+    <span class="doc-btn">View</span>
+  </a>
+
+  <a class="doc-link" href="DocArchitectureTechniqueHSM_1.pdf" target="_blank">
+    <div class="doc-info">
+      <h4>Architecture Technique</h4>
+      <p>Infrastructure schema & phishing attack scenario</p>
+    </div>
+    <span class="doc-btn">View</span>
+  </a>
+
+  <a class="doc-link" href="RapportAnalysedeRisqueEBIOSRM_HSM_1.pdf" target="_blank">
+    <div class="doc-info">
+      <h4>Analyse de Risques EBIOS RM</h4>
+      <p>Full 5-workshop risk analysis report</p>
+    </div>
+    <span class="doc-btn">View</span>
+  </a>
+
+  <a class="doc-link" href="Plan_damélioration_HSM_1.pdf" target="_blank">
+    <div class="doc-info">
+      <h4>Plan d'Amélioration</h4>
+      <p>Continuous improvement plan with KPIs</p>
+    </div>
+    <span class="doc-btn">View</span>
+  </a>
+
+  <a class="doc-link" href="PlanningBudgetHSM_1.xlsx" target="_blank">
+    <div class="doc-info">
+      <h4>Planning & Budget</h4>
+      <p>Project timeline and budget breakdown</p>
+    </div>
+    <span class="doc-btn">View</span>
+  </a>
+
+  <div class="section-title">Consulting Team</div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar">LY</div>
+      <h4>Loïc YAMGA</h4>
+      <p>Lead Cybersecurity & EBIOS RM</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">SK</div>
+      <h4>Samuel KISSI</h4>
+      <p>Technical Audit & Infrastructure</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">CN</div>
+      <h4>Célina NINKE</h4>
+      <p>RGPD / Compliance</p>
+    </div>
+    <div class="team-card highlight">
+      <div class="avatar" style="background:#e8734a">KA</div>
+      <h4>Keren ADAMU</h4>
+      <p>AMOA / Business Processes</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">UT</div>
+      <h4>Urich TAMO</h4>
+      <p>Security Analyst</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Keren ADAMU · School Project 2025 · <a href="https://github.com/kerenadamu2020-del/Mission-Professionnelle-HSM-NovaSec" style="color:#e8734a">View on GitHub</a></p>
+</footer>
+
+</body>
+</html>
